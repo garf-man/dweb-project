@@ -1,0 +1,87 @@
+{% extends 'index.html.twig' %}
+{% block content%}
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Single Product</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        <div class="product-breadcroumb">
+                            <a href="">Home</a>
+                            <a href="">Category Name</a>
+                            <a href="">{{products.name}}</a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="product-images">
+                                    <div class="product-main-img">
+
+
+                                        <img src="{{fn('imageExist',products.image) }}" alt="">
+                                    </div>
+
+                                    <div class="product-gallery">
+                                        <img src="{{ fn('asset','img/product-thumb-1.jpg') }}" alt="">
+                                        <img src="{{ fn('asset','img/product-thumb-2.jpg') }}" alt="">
+                                        <img src="{{ fn('asset','img/product-thumb-3.jpg') }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="product-inner">
+                                    <h2 class="product-name">{{products.name}}</h2>
+                                    <div class="product-inner-price">
+                                        <ins>${{ products.price }}</ins> <del>${{products.price + 100}}</del>
+                                    </div>
+
+                                    <form action="" class="cart">
+
+
+                                    </form>
+
+                                    <div class="product-inner-category">
+                                        <p>Category: <a href="">Summer</a> </p>
+                                    </div>
+
+                                    <div role="tabpanel">
+                                        <ul class="product-tab" role="tablist">
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"></a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                                <h2>Product Description</h2>
+                                                <p>{{ products.description }}</p>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="profile">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

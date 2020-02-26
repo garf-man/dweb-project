@@ -1,0 +1,60 @@
+{% extends 'index.html.twig' %}
+
+{% block content%}
+
+
+    <div style="margin-left: 40px;margin-bottom: 40px">
+        <form class="form-horizontal" action='http://slim.by/signIn' method="POST">
+
+
+
+
+            <fieldset>
+                <div id="legend">
+                    <legend class="">Register</legend>
+                </div>
+
+                {% if emptyErrors is not empty %}
+                    <ul>
+                        {% for error in emptyErrors %}
+                            <li>  поле {{error}} не должно быть пустым </li>
+                        {% endfor %}
+                    </ul>
+
+                {% endif %}
+
+                {% if error.wrongPasswordOrLogin is not empty %}
+                    {{ error.wrongPasswordOrLogin }}
+                {% endif %}
+
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">E-mail</label>
+                    <div class="controls">
+                        <input value="{{ fn('old', old, 'email') }}" type="text" id="email" name="email" placeholder="email" class="input-xlarge">
+                        <p class="help-block">Please provide your E-mail</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="password" name="password" placeholder="password" class="input-xlarge ">
+                        <p class="help-block">Password should be at least 4 characters</p>
+                    </div>
+                </div>
+
+
+                <div class="control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button class="btn btn-success">ВОЙТИ</button>
+
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+{% endblock %}

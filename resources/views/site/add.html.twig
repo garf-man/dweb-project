@@ -1,0 +1,44 @@
+{% extends 'index.html.twig' %}
+{% block content%}
+    <div class="col-10" style="margin-left: 80px">
+        <form action="/storeProduct" method="POST" enctype="multipart/form-data">
+            <h2 class="mb-4">Добавить новый товар</h2>
+            <div class="form-group">
+                <label for="first_name">Название</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Название" pattern="{1,}$" required>
+                <span class="form__error">Это поле должно содержать только буквы</span>
+            </div>
+            <div class="form-group">
+                <label for="surname">Цена</label>
+                <input name="price" type="text" class="form-control" id="price" placeholder="Цена" required pattern="{1,}">
+                <span class="form__error">Это поле должно содержать только цифры</span>
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Категория</label><br>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="category_id">
+                    <option selected>Choose...</option>
+                    {% for category in categories %}
+                    <option value="{{ category.id }}">{{ category.name }}</option>
+                    {%endfor%}
+                </select>
+                <span class="form__error">Выберите категорию</span>
+
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Описание</label>
+                <input name="description" type="text" class="form-control" id="description" placeholder="Описание" required pattern="^{1,}$">
+                <span class="form__error">Это поле должно содержать только буквы</span>
+            </div>
+            <div class="form-group">
+                <label for="middle_name">Фотография</label>
+                <input name="image" type="file"  id="image" placeholder="Фотография">
+
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add Product</button>
+                <a href="/shop" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+
+{% endblock%}

@@ -1,0 +1,140 @@
+{% extends 'index.html.twig' %}
+{% block content%}
+    {% if cartEmpty is empty %}
+
+        <div class="product-content-right">
+    <div class="woocommerce">
+
+        <table cellspacing="0" class="shop_table cart">
+            <thead>
+            <tr>
+                <th class="product-remove">&nbsp;</th>
+                <th class="product-thumbnail">&nbsp;</th>
+                <th class="product-name">Product</th>
+                <th class="product-price">Price</th>
+                <th class="product-quantity">Quantity</th>
+                <th class="product-subtotal">Total</th>
+            </tr>
+            </thead>
+            {% for product in products %}
+            <tbody>
+            <tr class="cart_item">
+                <td class="product-remove">
+
+                    <form name="delete" method="post" action="{{ fn('route','/delete/'~ product.id) }}" >
+                        <button  title="Remove this item" class="remove">×</button>
+                    </form>
+
+                </td>
+
+                <td class="product-thumbnail">
+                    <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/{{product.image}}"></a>
+                </td>
+
+                <td class="product-name">
+                    <a href="single-product.html">{{product.name}}</a>
+                </td>
+
+                <td class="product-price">
+                    <span class="amount">{{ product.price }} {{ session.currency.name }}</span>
+                </td>
+
+                <td class="product-quantity">
+                    <div class="quantity buttons_added">
+
+                        <form name="incr" method="post" action="{{ fn('route','edit/'~ product.id)~'/decr/1' }}" >
+                            <button  title="Remove this item" class="remove" >-</button>
+                        </form>
+
+                        <input type="number" size="4" class="input-text qty text" title="Qty" value="{{cart.get[product.id]['qty']}}" min="0" step="1">
+
+                        <form name="decr" method="post" action="{{ fn('route','edit/'~ product.id)~'/incr/1' }}" >
+                            <button  title="Remove this item" class="remove" >+</button>
+                        </form>
+
+                    </div>
+                </td>
+
+                <td class="product-subtotal">
+                    <span class="amount">{{ product.price * cart.get[product.id]['qty']}} {{ session.currency.name }}</span>
+                </td>
+            </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+    <div style="margin-left: 40px;margin-bottom: 40px">
+        <form class="form-horizontal" action='/storeOrder' method="POST">
+            <fieldset>
+                <div class="cart_totals ">
+                    <h2>Cart Totals</h2>
+
+                    <table cellspacing="0">
+                        <tbody>
+                        <tr class="cart-subtotal">
+                            <th>Cart Subtotal</th>
+                            <td><span class="amount">{{ cart.totalPrice }} {{ session.currency.name }} </span></td>
+                        </tr>
+
+                        <tr class="shipping">
+                            <th>Shipping and Handling</th>
+                            <td>Free Shipping</td>
+                        </tr>
+
+                        <tr class="order-total">
+                            <th>Order Total</th>
+                            <td><strong><span class="amount">{{ cart.totalPrice }} {{ session.currency.name }}</span></strong> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="legend">
+                    <legend class="">Оформить заказ</legend>
+                </div>
+                <div class="control-group">
+                    <!-- Username -->
+                    <label class="control-label"  for="username">Имя</label>
+                    <div class="controls">
+                        <input style="text-transform: capitalize;" value="{{ session.user.name }}" type="text" id="username" name="name" placeholder="" class="input-xlarge">
+                        <p class="help-block">Введите ваше имя</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">Электронная почта</label>
+                    <div class="controls">
+                        <input value="{{ session.user.email }}" type="text" id="email" name="email" placeholder="" class="input-xlarge">
+                        <p class="help-block">Please provide your E-mail</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">Адрес</label>
+                    <div class="controls">
+                        <input type="text" id="address" name="address" placeholder="" class="input-xlarge">
+                        <p class="help-block">Please provide your E-mail</p>
+                    </div>
+                </div>
+
+
+
+                <div class="control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button class="btn btn-success">Подтвердить заказ</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{%  else %}
+    <h1>{{ cartEmpty }}</h1>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9782ab40-1606-4173-94a3-5eb20b054352" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/axora" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/vendor/slim/twig-view" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/pagination" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1X6kquTGrEOwYPz5naT2BTGgHxX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig" />
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig\config" />
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig\app\Models" />
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig\app\Components" />
+      <recent name="C:\Users\User\Downloads\OSPanel\domains\localhost\slimTwig\app\controllers" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9782ab40-1606-4173-94a3-5eb20b054352" name="Default Changelist" comment="" />
+      <created>1580374125952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580374125952</updated>
+      <workItem from="1580374127163" duration="9103000" />
+      <workItem from="1580386862370" duration="12605000" />
+      <workItem from="1580454430386" duration="13979000" />
+      <workItem from="1580472742611" duration="9712000" />
+      <workItem from="1580711858315" duration="40447000" />
+      <workItem from="1580809657643" duration="18177000" />
+      <workItem from="1580882133900" duration="93103000" />
+      <workItem from="1581313961605" duration="30431000" />
+      <workItem from="1581401751348" duration="27739000" />
+      <workItem from="1581487328154" duration="54826000" />
+      <workItem from="1581661145612" duration="26420000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="404" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581581155174">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="404" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581581155174" />
+    <state x="611" y="273" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580457006945">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="611" y="273" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1027@0.0.1920.1027" timestamp="1580457006945" />
+    <state x="501" y="208" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580801383472">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="501" y="208" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1580801383472" />
+    <state x="593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581491330580">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581491330580" />
+    <state x="485" y="135" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581057235753">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="485" y="135" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581057235753" />
+    <state x="557" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581519220740">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="557" y="147" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581519220740" />
+    <state x="632" y="147" key="FileChooserDialogImpl" timestamp="1581314006609">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="632" y="147" key="FileChooserDialogImpl/0.0.1920.1027@0.0.1920.1027" timestamp="1581314006609" />
+    <state x="713" y="406" key="NewPhpClassDialog" timestamp="1581593386453">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="713" y="406" key="NewPhpClassDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581593386453" />
+    <state x="819" y="591" key="NewPhpFileDialog" timestamp="1580480203389">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="819" y="591" key="NewPhpFileDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1580480203389" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1580374427567">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1920.1027@0.0.1920.1027" timestamp="1580374427567" />
+    <state x="90" y="90" width="1740" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1581677450059">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="90" y="90" width="1740" height="847" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581677450059" />
+    <state x="512" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1581661147369">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="512" y="251" key="com.intellij.ide.util.TipDialog/0.0.1920.1027@0.0.1920.1027" timestamp="1581661147369" />
+    <state x="0" y="0" width="894" height="1027" key="find.popup" timestamp="1581342586690">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="0" y="0" width="894" height="1027" key="find.popup/0.0.1920.1027@0.0.1920.1027" timestamp="1581342586690" />
+    <state x="909" y="220" key="run.anything.popup" timestamp="1581687590638">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="909" y="220" key="run.anything.popup/0.0.1920.1027@0.0.1920.1027" timestamp="1581687590638" />
+    <state x="453" y="0" width="1009" height="1023" key="search.everywhere.popup" timestamp="1581687265439">
+      <screen x="0" y="0" width="1920" height="1027" />
+    </state>
+    <state x="453" y="0" width="1009" height="1023" key="search.everywhere.popup/0.0.1920.1027@0.0.1920.1027" timestamp="1581687265439" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/slim/slim/Slim/Http/UploadedFile.php</url>
+          <line>117</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

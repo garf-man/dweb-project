@@ -1,0 +1,51 @@
+{% extends 'index.html.twig' %}
+
+{% block content%}
+    {{ order.name }} ваш заказ успешно сформирован!<br>
+    Общая цена заказа {{ order.total_price }}  {{ session.currency.name }}.Товар будет доставлен по адресу {{ order.address }}<br>
+    Ваши товары:
+    <table cellspacing="0" class="shop_table cart">
+        <thead>
+        <tr>
+            <th class="product-remove">&nbsp;</th>
+
+            <th class="product-name">Product</th>
+            <th class="product-price">Price</th>
+            <th class="product-quantity">Quantity</th>
+            <th class="product-quantity">Total</th>
+        </tr>
+        </thead>
+        {% for product in products %}
+        <tbody>
+        <tr class="cart_item">
+
+
+            <td class="product-thumbnail">
+                <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="{{ fn('asset','img/'~product.image) }}"></a>
+            </td>
+
+            <td class="product-name">
+                <a href="single-product.html">{{product.name}}</a>
+            </td>
+
+            <td class="product-price">
+                <span class="amount">{{ product.price }} {{ session.currency.name }}</span>
+            </td>
+
+            <td class="product-quantity">
+                <div class="quantity buttons_added">
+
+                    <span class="amount">{{ product.pivot.qty }}</span>
+
+                </div>
+            </td>
+
+            <td class="product-subtotal">
+                <span class="amount">{{ product.price * product.pivot.qty }} {{ session.currency.name }}</span>
+            </td>
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock%}
